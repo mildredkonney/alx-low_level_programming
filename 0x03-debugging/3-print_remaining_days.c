@@ -21,17 +21,17 @@ void print_remaining_days(int month, int day, int year)
 	{
 		if (month > 2 && day >= 60)
 			day++;
-		printf("Days of the year: %i\n", day);
-		printf("Remaining days: %i\n", leapDaysTot - day);
+		printf("Days of the year: %d\n", day);
+		printf("Remaining days: %d\n", leapDaysTot - day);
 	}
 	else
 	{
 		if (month == 2 && day == 60)
-			printf("Invalid date: %02i/%02i/%04i\n", month, day - janDaysTot, year);
+			printf("Invalid date: %02d/%02d/%04d\n", month, day - janDaysTot, year);
 		else
 		{
-			printf("Day of the year: %i\n", day);
-			printf("Remaining days: %i\n", daysTot - day);
+			printf("Day of the year: %d\n", day);
+			printf("Remaining days: %d\n", daysTot - day);
 		}
 
 	}
